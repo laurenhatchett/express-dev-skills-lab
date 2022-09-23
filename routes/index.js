@@ -7,8 +7,6 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express Dev Skills' })
 })
 
-res.render('index', {title: 'Dev Skills'})
-
 export { 
   router,
 }
