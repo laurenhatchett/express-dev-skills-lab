@@ -8,6 +8,9 @@ const router = Router()
 //localhost:3000/skills
 router.get('/', skillsCtrl.index )
 
+//localhost:3000/skills/new
+router.get('/new', skillsCtrl.index)
+
 export {
   router
 }
