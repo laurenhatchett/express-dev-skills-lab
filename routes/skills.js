@@ -3,13 +3,15 @@ import * as skillsCtrl from '../controllers/skills.js'
 
 const router = Router()
 
-/* GET skills listing. */
-
-//localhost:3000/skills
+//Get Skills listing
+//GET localhost:3000/skills
 router.get('/', skillsCtrl.index )
 
-//localhost:3000/skills/new
-router.get('/new', skillsCtrl.index)
+//GET localhost:3000/skills/new
+router.get('/new', skillsCtrl.new)
+
+//POST-localhost:3000/skills
+router.post('/', skillsCtrl.create)
 
 export {
   router
